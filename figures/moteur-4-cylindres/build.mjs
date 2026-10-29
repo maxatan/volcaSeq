@@ -213,7 +213,7 @@ const html = k.plateHtml({
   ],
   caption:
     "Moteur essence 1,6 L, alésage et course de 80 mm, rapport volumétrique 10:1. Chaque cylindre passe par admission, compression, combustion et échappement en deux tours de vilebrequin, un tour d'arbre à cames. Les manetons 1 et 4 montent quand 2 et 3 descendent, et l'allumage tourne dans l'ordre 1-3-4-2 : une combustion tous les 180°.",
-  body: `<div class="iso-stage" tabindex="0" role="slider" aria-label="Moteur 4 cylindres : glisser ou flèches gauche et droite pour tourner le vilebrequin, haut et bas pour changer la vitesse, espace pour arrêter" aria-valuemin="0" aria-valuemax="719" aria-valuenow="0">${svg}</div>`,
+  body: `<div class="iso-stage" style="touch-action:pan-y" tabindex="0" role="slider" aria-label="Moteur 4 cylindres : glisser ou flèches gauche et droite pour tourner le vilebrequin, haut et bas pour changer la vitesse, espace pour arrêter" aria-valuemin="0" aria-valuemax="719" aria-valuenow="0">${svg}</div>`,
 });
 
 const name = theme === "light" ? "moteur-light.html" : "moteur.html";
